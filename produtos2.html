@@ -5,28 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comida</title>
     <style>
+        body {
+            margin: 0;
+            background: rgb(49, 49, 49);
+            font-family: "Euclid Circular A", "Poppins";
+            color: #d6dfed;
+        }
         .container {
             text-align: center;
+            padding: 20px;
         }
-        .produto {
-            margin: 10px 0;
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .produto{
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+            border: 2px solid #fff; /* Adiciona uma borda branca */
         }
         button {
             margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
         }
+        button:hover{
+            background-color: #ff4500;
+        }
+        a{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #1c86ee;
+        }
+        .imagen {
+            height: 230px;
+            width: 230px;
+            position: relative; /* Define o contêiner como referência para posicionamento absoluto */
+            margin: 0 auto; /* Centraliza a div no contêiner pai */
+            left: -15px;
+            top: 60px;
+        }
+        .imagen a {
+            position: absolute; /* Posiciona o link de forma absoluta dentro do contêiner */
+            top: 290px; /* Mova o link para 110 pixels do topo do contêiner */
+            left: 10%; /* Centraliza horizontalmente */
+            transform: translateX(-50%); /* Ajusta a centralização horizontal */
+            background-color: yellow; /* Adiciona uma cor de fundo para visualização */
+            padding: 5px; /* Adiciona um pouco de padding para visualização */
+            text-decoration: none; /* Remove a decoração do link */
+            color: black; /* Define a cor do texto do link */
+        }
+        .imagen img {
+            width: 100%;
+            height: auto;
+        } 
     </style>
 </head>
 <body>
     <div class="container">
-        <h3>Comida</h3>
+        <h3>Pratos</h3>
+        <div class="produtos">
         <div class="produto">
+            <div class="imagen"><img src="imagens/depositphotos_30239063-stock-photo-japanese-food-sushi-and-sashimi.jpg" alt="Sushi">
+            </div>
             <p>Sushi - R$ 30,00</p>
             <button onclick="addToCart('Sushi', 30)">Adicionar ao Carrinho</button>
         </div>
         <div class="produto">
+            <div class="imagen"><img src="imagens/sashimi-de-salmao-da-culinaria-japonesa_872147-9604.avif" alt="Sashimi">
+            </div>
             <p>Sashimi - R$ 40,00</p>
             <button onclick="addToCart('Sashimi', 40)">Adicionar ao Carrinho</button>
         </div>
+        <div class="produto">
+            <div class="imagen"><img src="imagens/tempura-de-camarao-em-um-prato-colocado-comida-japonesa_934664-123.jpg" alt="Tempurá de camarão">
+            </div>
+            <p>Tempurá de camarão - R$ 59,00</p>
+            <button onclick="addToCart('Tempurá de camarão', 59)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <div class="imagen"><img src="imagens/macarrao-yakisoba-comida-japonesa_398492-11916.avif" alt="Yakisoba">
+            </div>
+            <p>Yakisoba - R$ 42,00</p>
+            <button onclick="addToCart('Yakisoba', 42)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <div class="imagen"><img src="imagens/Gyoza-História-e-Receita.jpg" alt="Guioza">
+            </div>
+            <p>Guioza - R$ 19,00</p>
+            <button onclick="addToCart('Guioza', 19)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <div class="imagen"><img src="imagens/istockphoto-612002744-612x612.jpg" alt="Temaki">
+            </div>
+            <p>Temaki  - R$ 15,00</p>
+            <button onclick="addToCart('Temaki ', 15)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <div class="imagen"><img src="imagens/harumaki.jpg" alt="Harumaki">
+            </div>
+            <p>Harumaki - R$ 26,00</p>
+            <button onclick="addToCart('Harumaki ', 26)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <div class="imagen"><img src="imagens/Okonomiyaki.jpg" alt="Okonomiyaki">
+            </div>
+            <p>Okonomiyaki - R$ 20,00</p>
+            <button onclick="addToCart('Okonomiyaki', 20)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
         <a href="pagamento.html">Ir para Pagamento</a>
     </div>
 

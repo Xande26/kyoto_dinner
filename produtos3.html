@@ -5,28 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bebidas</title>
     <style>
+        body {
+            margin: 0;
+            background: rgb(49, 49, 49);
+            font-family: "Euclid Circular A", "Poppins";
+            color: #d6dfed;
+        }
         .container {
             text-align: center;
+            padding: 20px;
         }
-        .produto {
-            margin: 10px 0;
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .produto{
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+            border: 2px solid #fff; /* Adiciona uma borda branca */
         }
         button {
             margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
         }
+        button:hover{
+            background-color: #ff4500;
+        }
+        a{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #1c86ee;
+        }
+        .imagen {
+            height: 230px;
+            width: 230px;
+            position: relative; /* Define o contêiner como referência para posicionamento absoluto */
+            margin: 0 auto; /* Centraliza a div no contêiner pai */
+            left: -15px;
+            top: 60px;
+        }
+        .imagen a {
+            position: absolute; /* Posiciona o link de forma absoluta dentro do contêiner */
+            top: 290px; /* Mova o link para 110 pixels do topo do contêiner */
+            left: 10%; /* Centraliza horizontalmente */
+            transform: translateX(-50%); /* Ajusta a centralização horizontal */
+            background-color: yellow; /* Adiciona uma cor de fundo para visualização */
+            padding: 5px; /* Adiciona um pouco de padding para visualização */
+            text-decoration: none; /* Remove a decoração do link */
+            color: black; /* Define a cor do texto do link */
+        }
+        .imagen img {
+            width: 100%;
+            height: auto;
+        }
+        
     </style>
 </head>
 <body>
     <div class="container">
         <h3>Bebidas</h3>
+        <div class="produtos">
         <div class="produto">
-            <p>Sakê - R$ 20,00</p>
-            <button onclick="addToCart('Sakê', 20)">Adicionar ao Carrinho</button>
+            <div class="imagen"><img src="imagens/sake.jpg" alt="Sakê">
+            </div>
+            <p>Sakê (Honjozo, Junmai e Ginjo) - R$ 30,00</p>
+            <button onclick="addToCart('Sakê', 30)">Adicionar ao Carrinho</button>
         </div>
         <div class="produto">
-            <p>Refrigerante - R$ 10,00</p>
-            <button onclick="addToCart('Refrigerante', 10)">Adicionar ao Carrinho</button>
+            <div class="imagen"><img src="imagens/deliciosa-xicara-de-cafe-de-qualidade_23-2150691273.avif" alt="café">
+            </div>
+            <p>café - R$ 10,00</p>
+            <button onclick="addToCart('café', 10)">Adicionar ao Carrinho</button>
         </div>
+        <div class="produto">
+            <div class="imagen"><img src="imagens/Cervejas-japonesas.jpg" alt="Cerveja">
+            </div>
+            <p>Cerveja - R$ 15,00</p>
+            <button onclick="addToCart('Cerveja', 15)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <div class="imagen"><img src="imagens/Pocari-Sweat-Ion-Supply-Drink-350ml-Main.png" alt="Harumaki">
+            </div>
+            <p>Pocari Sweat - R$ 6,00</p>
+            <button onclick="addToCart('Pocari Sweat', 6)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <div class="imagen"><img src="imagens/5 bebidas tradicionais japonesas - Umeshu (tokyo.thenote.com.tw).jpg" alt="Harumaki">
+            </div>
+            <p>Umeshu- R$ 40,00</p>
+            <button onclick="addToCart('Umeshu', 40)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <div class="imagen"><img src="imagens/dac-san-ruou-amazake.webp" alt="Amazake">
+            </div>
+            <p>Amazake - R$ 25,00</p>
+            <button onclick="addToCart('Amazake', 25)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <div class="imagen"><img src="imagens/depositphotos_533904434-stock-photo-cup-of-tea-hot-drink.jpg" alt="Harumaki">
+            </div>
+            <p>Chá - R$ 8,00</p>
+            <button onclick="addToCart('Chá', 8)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <div class="imagen"><img src="imagens/c1b0228bdc649b89deac275de993d98f.png" alt="Harumaki">
+            </div>
+            <p>Hatakosen HATA Ramune(Blueberry, Strawberry, Orange, Original) - R$ 15,00</p>
+            <button onclick="addToCart('Melon Soda', 15)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
         <a href="pagamento.html">Ir para Pagamento</a>
     </div>
 

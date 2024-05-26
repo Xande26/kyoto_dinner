@@ -3,29 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Combos</title>
+    <title>Sobremesa</title>
     <style>
+        body {
+            margin: 0;
+            background: rgb(49, 49, 49);
+            font-family: "Euclid Circular A", "Poppins";
+            color: #d6dfed;
+        }
         .container {
             text-align: center;
+            padding: 20px;
+        }
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
         .produto {
-            margin: 10px 0;
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+            border: 2px solid #fff; /* Adiciona uma borda branca */
         }
         button {
             margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ff4500;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #1c86ee;
+        }
+        .imagen {
+            height: 230px;
+            width: 230px;
+            position: relative; /* Define o contêiner como referência para posicionamento absoluto */
+            margin: 0 auto; /* Centraliza a div no contêiner pai */
+            left: -15px;
+            top: 60px;
+        }
+        .imagen a {
+            position: absolute; /* Posiciona o link de forma absoluta dentro do contêiner */
+            top: 290px; /* Mova o link para 110 pixels do topo do contêiner */
+            left: 10%; /* Centraliza horizontalmente */
+            transform: translateX(-50%); /* Ajusta a centralização horizontal */
+            background-color: yellow; /* Adiciona uma cor de fundo para visualização */
+            padding: 5px; /* Adiciona um pouco de padding para visualização */
+            text-decoration: none; /* Remove a decoração do link */
+            color: black; /* Define a cor do texto do link */
+        }
+        .imagen img {
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h3>Sobremesa</h3>
-        <div class="produto">
-            <p>Combo 1 - R$ 50,00</p>
-            <button onclick="addToCart('Sobremesa 1', 50)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="produto">
-            <p>Combo 2 - R$ 70,00</p>
-            <button onclick="addToCart('Sobremesa 2', 70)">Adicionar ao Carrinho</button>
+        <h2>Sobremesa</h2>
+        <div class="produtos">
+            <div class="produto">
+                <div class="imagen"><img src="imagens/istockphoto-476724822-612x612.jpg" alt="Taiyaki">
+                </div>
+                <p>Taiyaki - R$ 15,00</p>
+                <button onclick="addToCart('Taiyaki', 15)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <div class="imagen"><img src="imagens/istockphoto-1158085114-612x612.jpg" alt="Mochi">
+                </div>   
+                <p>Mochi- R$ 28,00</p>
+                <button onclick="addToCart('Mochi', 28)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <div class="imagen"><img src="imagens/istockphoto-1156009547-612x612.jpg" alt="Manju">
+                </div> 
+                <p>Manju - R$ 27,00</p>
+                <button onclick="addToCart('Manju', 27)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <div class="imagen"><img src="imagens/parfait-de-sobremesa-popular-japones-feito-com-iogurte-de-frutas-frescas-e-granola-isolado-no-cimento_368093-3351.jpg" alt="Parfait">
+                </div>
+                <p>Parfait - R$ 15,00</p>
+                <button onclick="addToCart('Parfait', 15)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <div class="imagen"><img src="imagens/277_an.jpg" alt="Manju">
+                </div> 
+                <p>Anko - R$ 20,00</p>
+                <button onclick="addToCart('Anko', 20)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <div class="imagen"><img src="imagens/jfd202010_fruit-sandwich04.jpg" alt="Sanduíches de Fruta">
+                </div>
+                <p>Sanduíches de Fruta- R$ 21,00</p>
+                <button onclick="addToCart('Sanduíches de Fruta', 28)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <div class="imagen"><img src="imagens/istockphoto-534715241-612x612.jpg" alt="Dorayaki">
+                </div> 
+                <p>Dorayaki - R$ 12,00</p>
+                <button onclick="addToCart('Dorayaki', 12)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <div class="imagen"><img src="imagens/istockphoto-470731396-612x612.jpg" alt="Namagashi">
+                </div>
+                <p>Namagashi - R$ 20,00</p>
+                <button onclick="addToCart('Namagashi', 20)">Adicionar ao Carrinho</button>
+            </div>
         </div>
         <a href="pagamento.html">Ir para Pagamento</a>
     </div>

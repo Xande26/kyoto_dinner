@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    background: rgb(49, 49, 49);
+    font-family: "Euclid Circular A", "Poppins";
+    color: #d6dfed;    
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.name {
+    position: relative;
+    margin-bottom: 30px;
+    top: -10px;
+    left: 830px;
+    width: 300px; /* Define a largura desejada */
+    font-size: 44px; /* Tamanho da fonte */
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    height: 600px; 
+}
+
+.categoria_prato a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 150px 190px; /* Ajuste o valor vertical (primeiro valor) conforme necessário */
+    border: 2px solid ; /* Tornando a borda transparente */
+    border-radius: 5px;
+    position: relative; /* Necessário para posicionar o gif */
+    overflow: hidden; /* Garante que o overflow não seja exibido */
+    background-color: #ff3c00;
+    top: 100px;
+    font-size: 25px;
+}
+.categoria_prato a::before {
+    content: '';
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background-size: cover; /* Garante que o gif cubra toda a área */
+    background-repeat: no-repeat; /* Evita a repetição do gif */
+    border-radius: 5px;
+    z-index: -1; /* Colocando o gif atrás do texto */
+    
+}
+.categoria_prato a:hover::before {
+    top: 0;
+    left: 0;
+}
+.categoria_prato a:hover {
+    background-image: url('gif/Gifs\ animados\ Comida\ Japonesa\ 4.gif');
+    color: #ff3c00;
+    background-size: cover; /* Garante que o gif cubra toda a área */
+    position: relative; /* Necessário para posicionar o gif */
+    
+}
+.categoria_bebida a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 150px 190px; /* Ajuste o valor vertical (primeiro valor) conforme necessário */
+    border: 2px solid ; /* Tornando a borda transparente */
+    border-radius: 5px;
+    position: relative; /* Necessário para posicionar o gif */
+    overflow: hidden; /* Garante que o overflow não seja exibido */
+    background-color: #ff3c00;
+    top: 100px;
+    font-size: 25px;
+}
+.categoria_bebida a::before {
+    content: '';
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background-repeat: no-repeat; /* Evita a repetição do gif */
+    border-radius: 5px;
+    z-index: -1; /* Colocando o gif atrás do texto */
+    
+}
+.categoria_bebida a:hover::before {
+    top: 0;
+    left: 0;
+}
+.categoria_bebida a:hover {
+    background-image: url('gif/200w.gif');
+    color: #ff3c00;
+    background-size: cover; /* Garante que o gif cubra toda a área */
+    position: relative; /* Necessário para posicionar o gif */
+}
+.categoria_sobremesa a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 150px 190px; /* Ajuste o valor vertical (primeiro valor) conforme necessário */
+    border: 2px solid ; /* Tornando a borda transparente */
+    border-radius: 5px;
+    position: relative; /* Necessário para posicionar o gif */
+    overflow: hidden; /* Garante que o overflow não seja exibido */
+    background-color: #ff3c00;
+    top: 100px;
+    font-size: 25px;
+}
+.categoria_sobremesa a::before {
+    content: '';
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background-repeat: no-repeat; /* Evita a repetição do gif */
+    border-radius: 5px;
+    z-index: -1; /* Colocando o gif atrás do texto */ 
+}
+.categoria_sobremesa a:hover::before {
+    top: 0;
+    left: 0;
+}
+.categoria_sobremesa a:hover {
+    background-image: url('gif/s10.gif');
+    color: #ff3c00;
+    background-size: cover; /* Garante que o gif cubra toda a área */
+    position: relative; /* Necessário para posicionar o gif */
+}
+.voltar{
+position: relative;
+top: -750px;
+left: 35px;
+
+}
+.voltar a{
+    position: relative;
+    border: 2px solid;
+border-radius: 5px;
+padding: 10px 20px;
+background-color: #ff1e00;
+color: #fff;
+}
+.imagem {
+    height: 230px;
+    width: 230px;
+    position: relative; /* Define o contêiner como referência para posicionamento absoluto */
+    margin: 0 auto; /* Centraliza a div no contêiner pai */
+    left: -3px;
+    top: 60px;
+}
+.imagem a {
+    position: absolute; /* Posiciona o link de forma absoluta dentro do contêiner */
+    top: 290px; /* Mova o link para 110 pixels do topo do contêiner */
+    left: 10%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a centralização horizontal */
+    background-color: yellow; /* Adiciona uma cor de fundo para visualização */
+    padding: 5px; /* Adiciona um pouco de padding para visualização */
+    text-decoration: none; /* Remove a decoração do link */
+    color: black; /* Define a cor do texto do link */
+}
+.imagem img {
+    width: 100%;
+    height: auto;
+}
+
