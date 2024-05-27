@@ -2,7 +2,8 @@ body {
     margin: 0;
     background: rgb(49, 49, 49);
     font-family: "Euclid Circular A", "Poppins";
-    color: #d6dfed;    
+    color: #d6dfed;
+    overflow: hidden;    
 }
 
 .container {
@@ -14,9 +15,9 @@ body {
     position: relative;
     margin-bottom: 30px;
     top: -10px;
-    left: 830px;
+    left: 585px;
     width: 300px; /* Define a largura desejada */
-    font-size: 44px; /* Tamanho da fonte */
+    font-size: 30px; /* Tamanho da fonte */
 }
 
 .categorias {
@@ -30,14 +31,15 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
-    padding: 150px 190px; /* Ajuste o valor vertical (primeiro valor) conforme necessário */
+    padding: 90px 150px; /* Ajuste o valor vertical (primeiro valor) conforme necessário */
     border: 2px solid ; /* Tornando a borda transparente */
     border-radius: 5px;
     position: relative; /* Necessário para posicionar o gif */
     overflow: hidden; /* Garante que o overflow não seja exibido */
     background-color: #ff3c00;
-    top: 100px;
+    top: -100px;
     font-size: 25px;
+    left: 3px;
 }
 .categoria_prato a::before {
     content: '';
@@ -66,14 +68,15 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
-    padding: 150px 190px; /* Ajuste o valor vertical (primeiro valor) conforme necessário */
+    padding: 90px 150px; /* Ajuste o valor vertical (primeiro valor) conforme necessário */
     border: 2px solid ; /* Tornando a borda transparente */
     border-radius: 5px;
     position: relative; /* Necessário para posicionar o gif */
     overflow: hidden; /* Garante que o overflow não seja exibido */
     background-color: #ff3c00;
-    top: 100px;
+    top: -100px;
     font-size: 25px;
+    left: 3px;
 }
 .categoria_bebida a::before {
     content: '';
@@ -100,14 +103,15 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
-    padding: 150px 190px; /* Ajuste o valor vertical (primeiro valor) conforme necessário */
+    padding: 90px 150px; /* Ajuste o valor vertical (primeiro valor) conforme necessário */
     border: 2px solid ; /* Tornando a borda transparente */
     border-radius: 5px;
     position: relative; /* Necessário para posicionar o gif */
     overflow: hidden; /* Garante que o overflow não seja exibido */
     background-color: #ff3c00;
-    top: 100px;
+    top: -100px;
     font-size: 25px;
+    left: 3px;
 }
 .categoria_sobremesa a::before {
     content: '';
@@ -131,8 +135,8 @@ body {
 }
 .voltar{
 position: relative;
-top: -750px;
-left: 35px;
+top: -680px;
+left: 33px;
 
 }
 .voltar a{
@@ -144,12 +148,12 @@ background-color: #ff1e00;
 color: #fff;
 }
 .imagem {
-    height: 230px;
-    width: 230px;
+    height: 150px;
+    width: 150px;
     position: relative; /* Define o contêiner como referência para posicionamento absoluto */
     margin: 0 auto; /* Centraliza a div no contêiner pai */
-    left: -3px;
-    top: 60px;
+    left: -15px;
+    top: -3px;
 }
 .imagem a {
     position: absolute; /* Posiciona o link de forma absoluta dentro do contêiner */
