@@ -1,0 +1,49 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: red; 
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 20px;
+    left: auto;
+}
+.logo img {
+    max-width: 690%; /* Define a largura máxima da imagem como 100% da largura da div .logo */
+    height: auto; /* Mantém a proporção da imagem */
+    position: absolute; /* Define a posição absoluta para a imagem */
+    right: 290px; /* Ajusta a posição da imagem para o canto direito */
+    top: 120%; /* Alinha a imagem verticalmente */
+    transform: translateY(-50%); /* Ajusta a posição verticalmente */
+}
+
+.nav-links {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+   margin-left: 800px;
+}
+
+.nav-links li {
+    margin-right: 90px; 
+}
+
+.nav-links li:first-child {
+    margin-left: 0; 
+}
+
+.nav-links li a {
+    color: white; 
+    text-decoration: none; 
+}

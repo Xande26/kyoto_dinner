@@ -1,0 +1,7 @@
+.imagem {
+    position: relative; /* Define o contêiner como referência para posicionamento absoluto */
+    margin: 0 auto; /* Centraliza a div no contêiner pai */
+    right: 200px;
+    height: 10px;
+    width: 10px;
+}
